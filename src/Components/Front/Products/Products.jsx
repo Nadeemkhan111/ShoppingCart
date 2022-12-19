@@ -1,6 +1,6 @@
 import React from "react";
 import "./Products.css";
-const Products = ({ productItem }) => {
+const Products = ({ productItem, handleAddProduct }) => {
   return (
     <div className="products">
       {productItem.map((productItem) => (
@@ -17,7 +17,12 @@ const Products = ({ productItem }) => {
           </div>
           <div className="products-price">{productItem.price}</div>
           <div>
-            <button className="products-add-button">Add to Cart</button>
+            <button
+              className="products-add-button"
+              onClick={() => handleAddProduct(productItem)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       ))}

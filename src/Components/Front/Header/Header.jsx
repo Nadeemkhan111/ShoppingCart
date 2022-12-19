@@ -25,7 +25,7 @@ const Header = () => {
         </ul>
         <ul>
           <li>
-            <Link to="/cart">
+            <Link to="/cart" className="cart">
               <AddShoppingCartIcon />
             </Link>
           </li>
