@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-const Header = () => {
+const Header = ({ cartItem }) => {
   return (
     <header className="header">
       <div>
@@ -27,6 +27,9 @@ const Header = () => {
           <li>
             <Link to="/cart" className="cart">
               <AddShoppingCartIcon />
+              <span className="cart-length">
+                {cartItem.length === 0 ? "" : cartItem.length}
+              </span>
             </Link>
           </li>
         </ul>

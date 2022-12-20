@@ -33,3 +33,14 @@
 .header-links ul li a:hover{
     color: aqua;
 }
+.cart-length{
+    margin: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    vertical-align: super;
+    color: yellow;
+}
+.cart{
+    margin-right: 30px;
+    padding-right: 20px;
+}

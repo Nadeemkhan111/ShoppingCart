@@ -35,15 +35,20 @@ const App = () => {
       );
     }
   };
+
+  const handleCartClear=()=>{
+    setCartItem([])
+  }
   return (
     <div>
       <Router>
-        <Header />
+        <Header cartItem={cartItem} />
         <Routess
           productItem={productItem}
           cartItem={cartItem}
           handleAddProduct={handleAddProduct}
           handleRemoveProduct={handleRemoveProduct}
+          handleCartClear={handleCartClear}
         />
       </Router>
     </div>
